@@ -1,0 +1,371 @@
+@charset "UTF-8";
+/* style.scss*/
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.ba-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 50px;
+  color: white; }
+  .ba-header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+.ba-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none; }
+  .ba-menu__item + .ba-menu__item {
+    margin-left: 90px; }
+  .ba-menu__link {
+    font-family: 'Gotham-Book';
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    text-transform: uppercase;
+    position: relative; }
+  .ba-menu__link::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    top: 0;
+    left: -20px; }
+  .ba-menu__link:active::before {
+    background-color: #ffffff; }
+
+.ba-menu-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none; }
+  .ba-menu-media__item + .ba-menu-media__item {
+    margin-left: 1.25vw; }
+  .ba-menu-media__link {
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4); }
+  .ba-menu-media__link > i {
+    line-height: 40px; }
+
+.ba-hero {
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  color: #ffffff;
+  background-color: #4b4b4b;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  padding-top: 23.125rem;
+  text-align: center; }
+  .ba-hero__title {
+    /* Style for "Simple & m" */
+    font-family: 'Gotham-Medium';
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 32px; }
+  .ba-hero__story {
+    /* Style for "We make th" */
+    font-family: "Gotham-Book";
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    letter-spacing: 5.4px; }
+  .ba-hero__link {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 50px;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4); }
+  .ba-hero__link > i {
+    line-height: 40px; }
+
+.ba-work {
+  padding-top: 6.25rem;
+  padding-bottom: 135px;
+  color: #2c4058; }
+  .ba-work__header {
+    /* Style for "what we do" */
+    font-family: 'Gotham-Medium';
+    font-size: 2.75rem;
+    font-weight: 600;
+    text-align: center; }
+  .ba-work-list {
+    margin-top: 160px; }
+  .ba-work-list + .ba-work-list {
+    margin-top: 205px; }
+  .ba-work__img_background {
+    max-width: 585px;
+    max-height: 470px;
+    background-color: #55b7ff;
+    position: absolute; }
+  .ba-work__img {
+    /* height: 100%;
+        max-width: 630px;
+        object-fit: cover; */
+    max-width: 100%;
+    position: relative;
+    z-index: 10; }
+  .ba-work__item {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+  .ba-work__title {
+    /* Style for "One World" */
+    font-size: 44px;
+    font-family: "Gotham-Bold"; }
+  .ba-work__item > span {
+    font-family: "Gotham-Book";
+    font-size: 22px;
+    text-transform: uppercase; }
+  .ba-work__text {
+    margin-top: 11px;
+    margin-bottom: 24px;
+    color: #4b5562;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 30px; }
+  .ba-work-button {
+    /* Style for "more detai" */
+    width: 190px;
+    height: 50px;
+    color: #2c4058;
+    background-color: #ffffff;
+    outline: none;
+    border: 1px solid #2c4058;
+    font-family: "Gotham-Book";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 50px;
+    text-transform: uppercase; }
+  .ba-work__adress {
+    /* Style for "  New Yor" */
+    color: #2c4058;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 30px;
+    margin-top: 55px; }
+
+.ba-news {
+  /* Style for "Bg" */
+  min-height: 1035px;
+  padding-top: 180px;
+  padding-bottom: 209px;
+  background-color: #ffffff;
+  background-image: url(../images/Bg-News.jpg);
+  background-size: cover; }
+  .ba-news__title {
+    /* Style for "latest new" */
+    color: #ffffff;
+    font-family: 'Gotham-Medium';
+    font-size: 44px;
+    font-weight: 500;
+    margin-bottom: 100px;
+    text-align: center; }
+  .ba-news__picture {
+    height: 100%;
+    max-width: 370px;
+    object-fit: cover; }
+  .ba-news-list {
+    display: flex;
+    justify-content: space-around; }
+    .ba-news-list__title {
+      /* Style for "See The Un" */
+      padding-left: 20px;
+      max-width: 276px;
+      color: #2c4058;
+      font-family: 'Gotham-Medium';
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 34px; }
+    .ba-news-list__text {
+      /* Style for "Free direc" */
+      padding-left: 20px;
+      color: #4b5562;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      line-height: 30px; }
+  .ba-news__item {
+    /* Style for "Frame" */
+    max-width: 370px;
+    min-height: 514px;
+    padding-bottom: 30px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .ba-news-person {
+    padding-left: 20px;
+    display: flex;
+    align-items: center; }
+
+.ba-person__info {
+  margin-left: 20px; }
+
+.ba-person__name {
+  /* Style for "Isaac Dunn" */
+  color: #2c4058;
+  font-family: "Gotham - Book";
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 5px; }
+
+.ba-person__date {
+  /* Style for "09 Feb 201" */
+  color: #55b7ff;
+  font-family: "Gotham-Book";
+  font-size: 14px;
+  font-weight: 400; }
+
+.ba-gallery {
+  background-color: #ffffff; }
+  .ba-gallery-wrapper {
+    min-height: 1000px;
+    padding-top: 180px;
+    padding-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+  .ba-gallery__title {
+    /* Style for "gallery" */
+    color: #2c4058;
+    font-family: 'Gotham-Medium';
+    font-size: 44px;
+    font-weight: 500; }
+  .ba-gallery__img {
+    max-width: 100%;
+    object-fit: cover;
+    /* height: 100%;
+        max-width: 445px;
+        object-fit: cover; */ }
+  .ba-gallery__item {
+    padding-left: 5px;
+    padding-right: 5px; }
+  .ba-gallery__picture + .ba-gallery__picture {
+    margin-top: 7px; }
+
+.ba-footer {
+  position: relative;
+  color: #ffffff;
+  background-color: #4b4b4b;
+  background-image: url(../images/Bg-footer.jpg);
+  background-size: cover; }
+  .ba-footer-list {
+    padding-top: 204px;
+    padding-bottom: 211px; }
+  .ba-footer-container {
+    max-width: 770px;
+    width: 100%;
+    margin: 0 auto; }
+  .ba-footer__item .ba-menu-media {
+    justify-content: flex-end; }
+  .ba-footer__info {
+    margin-top: 42px;
+    display: flex; }
+  .ba-footer__copyright, .ba-footer__prop {
+    /* Style for "Copyrights" */
+    font-family: "Gotham-Book";
+    font-size: 14px;
+    margin-right: 41px; }
+
+.ba-callback-window {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translate(-50%, -100%);
+  color: #2c4058;
+  box-shadow: 0 -4px 30px rgba(133, 133, 133, 0.2);
+  background-color: #ffffff;
+  /* background: {
+            image: url(../images/Bg-contacts.jpg);
+            size: cover;
+        } */
+  margin: 0 auto;
+  padding-top: 91px;
+  padding-bottom: 79px;
+  padding-right: 60px;
+  padding-left: 60px; }
+
+.ba-callback__title {
+  /* Style for "get in tou" */
+  text-align: center;
+  font-family: 'Gotham-Medium';
+  font-size: 44px;
+  font-weight: 500;
+  margin-bottom: 59px; }
+
+.ba-callback__item {
+  /* Style for "91 Nola" */
+  font-family: "Gotham-Book";
+  font-size: 18px;
+  font-weight: 300; }
+
+.ba-callback__item > i {
+  color: #7e5aff; }
+
+.ba-callback__item + .ba-callback__item {
+  margin-top: 32px; }
+
+.ba-callback-form {
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.ba-submit-btn {
+  width: 140px;
+  align-self: flex-end; }
+
+input[type=text],
+input[type=email] {
+  opacity: 0.5;
+  color: #4b5562;
+  font-family: "Gotham-Book";
+  font-size: 18px;
+  line-height: 40px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #2c4058; }
+
+input[type=text]:focus,
+input[type=email]:focus {
+  opacity: 1.0;
+  color: #000000; }

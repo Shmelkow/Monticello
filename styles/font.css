@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap');
+
+@font-face {
+    font-family: 'font722c5f898bbca8b2eb3fce0287688326';
+        
+        src:    url('https://nomail.com.ua/files/eot/722c5f898bbca8b2eb3fce0287688326.eot?#iefix') format('embedded-opentype'),
+                url('https://nomail.com.ua/files/woff/722c5f898bbca8b2eb3fce0287688326.woff') format('woff'),
+                url('https://nomail.com.ua/files/woff2/722c5f898bbca8b2eb3fce0287688326.woff2') format('woff2');
+    }
+    
+@font-face { font-family: 'Gotham-Bold';  src: local('Gotham-Bold'), url('https://nomail.com.ua/files/woff/722c5f898bbca8b2eb3fce0287688326.woff') format('woff'); }
+
+
+@font-face {
+    font-family: 'fonteca1317ee8a99162d0d0e2df77330cec';
+        
+        src:    url('https://nomail.com.ua/files/eot/eca1317ee8a99162d0d0e2df77330cec.eot?#iefix') format('embedded-opentype'),
+                url('https://nomail.com.ua/files/woff/eca1317ee8a99162d0d0e2df77330cec.woff') format('woff'),
+                url('https://nomail.com.ua/files/woff2/eca1317ee8a99162d0d0e2df77330cec.woff2') format('woff2');
+    }
+    
+@font-face { font-family: 'Gotham-Book';  src: local('Gotham-Book'), url('https://nomail.com.ua/files/woff/eca1317ee8a99162d0d0e2df77330cec.woff') format('woff'); }
+    
+@font-face {
+    font-family: 'font77171d8f5b5283f9d47a3434704bf944';
+        
+        src:    url('https://nomail.com.ua/files/eot/77171d8f5b5283f9d47a3434704bf944.eot?#iefix') format('embedded-opentype'),
+                url('https://nomail.com.ua/files/woff/77171d8f5b5283f9d47a3434704bf944.woff') format('woff'),
+                url('https://nomail.com.ua/files/woff2/77171d8f5b5283f9d47a3434704bf944.woff2') format('woff2');
+    }
+    
+@font-face { font-family: 'Gotham-Medium';  src: local('Gotham-Medium'), url('https://nomail.com.ua/files/woff/77171d8f5b5283f9d47a3434704bf944.woff') format('woff'); }
+    
+     
