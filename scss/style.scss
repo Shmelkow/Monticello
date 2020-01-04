@@ -20,6 +20,31 @@ ul {
     padding: 0;
     margin: 0;
 }
+
+.line-above-black:before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40px);
+    background-color: black;
+}
+
+.line-above-white:before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40px);
+    background-color: white;
+}
+
 //======================  ba-header  =========================//
 .ba-header {
     position: absolute;
@@ -102,9 +127,9 @@ ul {
         image: url(../images/background.jpg);
         size: cover;
     }
-    padding-top: 23.125rem;
-    //display: flex;
-    //align-items: center;
+    //padding-top: 23.125rem;
+    display: flex;
+    align-items: center;
     text-align: center;
     &__title {
         /* Style for "Simple & m" */
@@ -142,6 +167,7 @@ ul {
 }
 //======================  ba-what-we-do  =====================//
 .ba-work {
+    position: relative;
     padding: {
         top: 6.25rem;
         bottom: 135px;
@@ -149,6 +175,7 @@ ul {
     color: #2c4058;
     &__header {
         /* Style for "what we do" */
+        position: relative;
         font-family: 'Gotham-Medium';
         font-size: 2.75rem;
         font-weight: 600;
@@ -161,23 +188,36 @@ ul {
         margin-top: 205px;
     }
     &__img_background {
-        max-width: 585px;
-        max-height: 470px;
-        background-color: #55b7ff;
         position: absolute;
+        top: 15%;
+        left: 0;
+        right: 60%;
+        //max-width: 585px;
+        height: 470px;
+        background-color: #55b7ff;
+
+        &-right {
+            position: absolute;
+            bottom: 13%;
+            left: 60%;
+            right: 0;
+            //max-width: 585px;
+            height: 470px;
+            background-color: #7e5aff;
+        }
     }
     &__img {
-        /* height: 100%;
-        max-width: 630px;
-        object-fit: cover; */
-        max-width: 100%;
+        height: 100%;
+        //max-width: 630px;
+        object-fit: cover;
+        //max-width: 100%;
         position: relative;
         z-index: 10;
     }
     &__item {
-        padding: {
+        /* padding: {
             left: 50px;
-        }
+        } */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -247,6 +287,7 @@ ul {
     }
     &__title {
         /* Style for "latest new" */
+        position: relative;
         color: #ffffff;
         font-family: 'Gotham-Medium';
         font-size: 44px;
@@ -255,13 +296,12 @@ ul {
         text-align: center;
     }
     &__picture {
-        height: 100%;
+        width: 100%;
         max-width: 370px;
         object-fit: cover;
     }
     &-list {
-        display: flex;
-        justify-content: space-around;
+        justify-content: center;
     
         &__title {
             /* Style for "See The Un" */
@@ -301,12 +341,18 @@ ul {
         margin-bottom: 30px;
         background-color: #ffffff;
     }
-    &__item:nth-child(3n + 2) {
+    &__item + &__item {
+        margin: {
+            left: 30px;
+            //right: 30px;
+        }
+    }
+    /* &__item:nth-child(3n + 2) {
         margin: {
             left: 30px;
             right: 30px;
         }
-    }
+    } */
     &__img {
         margin-bottom: 30px;
     }
@@ -353,6 +399,7 @@ ul {
     }
     &__title {
         /* Style for "gallery" */
+        position: relative;
         color: #2c4058;
         font-family: 'Gotham-Medium';
         font-size: 44px;
@@ -361,7 +408,6 @@ ul {
     &__img {
         max-width: 100%;
         object-fit: cover;
-
         /* height: 100%;
         max-width: 445px;
         object-fit: cover; */
@@ -441,6 +487,7 @@ ul {
     }
     &__title {
         /* Style for "get in tou" */
+        position: relative;
         text-align: center;
         font-family: 'Gotham-Medium';
         font-size: 44px;
@@ -492,19 +539,18 @@ input[type=email]:focus {
     color: #000000;
 }
 //======================  slider  ========================//
-
-.slick-dots li {
+/* .slick-dots li {
     margin-left: 40px;
-}
-.slick-dots li button:before {
+} */
+/* .slick-dots li button:before {
     width: 9px;
     height: 9px;
     border-radius: 50%;
     border: 1px solid white;
     opacity: 1;
     color: transparent;
-}
-.slick-dots li.slick-active button:before {
+} */
+/* .slick-dots li.slick-active button:before {
     width: 9px;
     height: 9px;
     border-radius: 50%;
@@ -512,4 +558,4 @@ input[type=email]:focus {
     opacity: 1;
     color: transparent;
     background-color: white;
-}
+} */

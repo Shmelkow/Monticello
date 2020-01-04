@@ -5,21 +5,38 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        //autoplay: true,
+        autoplay: true,
         autoplaySpeed: 4000,
     });
 
     $("#hero-slider").slick({
         dots: true,
+        dotsClass:"vertical-dots",
         arrows: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        speed: 2000,
     });
 
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        let id  = $(this).attr('href');
+        let top = $(id).offset().top;
+         $('body,html').animate({scrollTop: top}, 1500);
+     });
+
+     $(".ba-hero__link").on("click", function (event) {
+        event.preventDefault();
+        let id  = $(this).attr('href');
+        let top = $(id).offset().top;
+         $('body,html').animate({scrollTop: top}, 2000);
+     });
+        
 
 
 });
+
 var map;
 function initMap() {
     let coordinates = {lat: 40.6605757, lng: -73.8962152};

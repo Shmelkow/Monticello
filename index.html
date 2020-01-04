@@ -8,8 +8,8 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/font.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+	<link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
     
     <link rel="stylesheet" href="styles/app.css">
 
@@ -23,7 +23,7 @@
                 <img src="images/Logo.png" alt="logo" class="logo">
             </a>
 
-            <nav>
+            <nav id="menu">
                 <ul class="ba-menu">
                     <li class="ba-menu__item">
                         <a href="#about-us" class="ba-menu__link">About us</a>
@@ -106,16 +106,16 @@
         <!-- ======= BA-WHAT-WE-DO START =======-->
         <section class="ba-section ba-work" id="about-us">
             <div class="container">
-                <h2 class="ba-work__header">What We Do</h2>
+                <h2 class="ba-work__header line-above-black">What We Do</h2>
                 
                 <div class="ba-row ba-work-list">
-                    <div class="ba-col-6">
-                       <!--  <div class="ba-work__img_background"></div> -->
+                    <div class="ba-col-7">
+                        <div class="ba-work__img_background"></div>
                         <div class="ba-work__pictures">
                             <img src="./images/joel-filipe-151697.jpg" alt="main picture" class="ba-work__img">
                         </div>
                     </div>
-                    <div class="ba-col-6 ba-work__item">
+                    <div class="ba-col-5 ba-work__item">
                         <span>one world</span>
                         <h2 class="ba-work__title">trade center</h2>
                         <div class="ba-work__text">
@@ -162,7 +162,7 @@
                         </p>
                     </div>
                     <div class="ba-col-6 ba-work__item">
-                        <!--  <div class="ba-work__img_background"></div> -->
+                         <div class="ba-work__img_background-right"></div>
                         <div class="ba-work__pictures">
                             <img src="./images/photos-1284iH4Hjf4mhNgW.jpg" alt="main picture" class="ba-work__img">
                         </div>
@@ -175,7 +175,7 @@
         <!-- ======= BA-NEWS START =======-->
         <section class="ba-section ba-news" id="news">
             <div class="container">
-                <h2 class="ba-news__title">latest news</h2>
+                <h2 class="ba-news__title line-above-white">latest news</h2>
                 <div class="ba-row ba-news-list" id="news-slider">
                     <div class="ba-news__item">
                         <div class="ba-news__img">
@@ -262,73 +262,6 @@
                         </div>
                     </div>
 
-                    <!-- <div class="ba-news__item">
-                        <div class="ba-news__img">
-                            <img src="./images/slider-3.jpg" alt="buildings set" class="ba-news__picture">
-                        </div>
-                        <h3 class="ba-news-list__title">Hypnotize Yourself Into The Ghost.</h3>
-                        <p class="ba-news-list__text">There are many things that are important to catalog design....</p>
-                        <div class="ba-news-person">
-                            <div class="ba-person__img">
-                                <img src="./images/Alice-Ward.png" alt="Alice Ward" class="ba-person__picture">
-                            </div>
-                            <div class="ba-person__info">
-                                <h4 class="ba-person__name">Alice Ward</h4>
-                                <p class="ba-person__date">30 Dec 2017</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="ba-news__item">
-                        <div class="ba-news__img">
-                            <img src="./images/slider-1.jpg" alt="buildings set" class="ba-news__picture">
-                        </div>
-                        <h3 class="ba-news-list__title">See The Unmatched Beauty Of The Great.</h3>
-                        <p class="ba-news-list__text ba-news-list__text_wide">Free directories: directories are perfect for customers that are... searching for</p>
-                        <div class="ba-news-person">
-                            <div class="ba-person__img">
-                                <img src="./images/isaac-dunn.png" alt="Isaac Dunn" class="ba-person__picture">
-                            </div>
-                            <div class="ba-person__info">
-                                <h4 class="ba-person__name">Isaac Dunn</h4>
-                                <p class="ba-person__date">09 Feb 2017</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="ba-news__item">
-                        <div class="ba-news__img">
-                            <img src="./images/slider-2.jpg" alt="buildings set" class="ba-news__picture">
-                        </div>
-                        <h3 class="ba-news-list__title">Effective Advertising Pointers.</h3>
-                        <p class="ba-news-list__text">Having a home based business is a wonderful asset to your life...</p>
-                        <div class="ba-news-person">
-                            <div class="ba-person__img">
-                                <img src="./images/Dominic-Freeman.png" alt="Dominic Freeman" class="ba-person__picture">
-                            </div>
-                            <div class="ba-person__info">
-                                <h4 class="ba-person__name">Dominic Freeman</h4>
-                                <p class="ba-person__date">24 Apr 2017</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="ba-news__item">
-                        <div class="ba-news__img">
-                            <img src="./images/slider-3.jpg" alt="buildings set" class="ba-news__picture">
-                        </div>
-                        <h3 class="ba-news-list__title">Hypnotize Yourself Into The Ghost.</h3>
-                        <p class="ba-news-list__text">There are many things that are important to catalog design....</p>
-                        <div class="ba-news-person">
-                            <div class="ba-person__img">
-                                <img src="./images/Alice-Ward.png" alt="Alice Ward" class="ba-person__picture">
-                            </div>
-                            <div class="ba-person__info">
-                                <h4 class="ba-person__name">Alice Ward</h4>
-                                <p class="ba-person__date">30 Dec 2017</p>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
                 
@@ -339,7 +272,7 @@
         <section class="ba-section ba-gallery" id="projects">
             <div class="container ba-gallery-wrapper">
                 <div class="ba-gallery-header">
-                    <h2 class="ba-gallery__title">Gallery</h2>
+                    <h2 class="ba-gallery__title line-above-black">Gallery</h2>
                 </div>
                 <div class="ba-row ba-gallery-list">
                     <div class="ba-col-6 ba-gallery__item">
@@ -386,8 +319,8 @@
 
     <footer class="ba-footer">
         <div class="ba-footer-container">
-            <div class="ba-callback-window">
-                <h2 class="ba-callback__title">get in touch</h2>
+            <div class="ba-callback-window" id="contact">
+                <h2 class="ba-callback__title line-above-black">get in touch</h2>
                 <div class="ba-row">
                     <div class="ba-col-6">
                         <ul class="ba-callback-list">
@@ -448,7 +381,7 @@
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 		crossorigin="anonymous">
 	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+	<script src="slick-1.8.1/slick/slick.min.js"></script>
 	
     <script src="javascript/app.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOFADmh5XKTWnRWE4PgDr1PgqxPNZy92M&callback=initMap"

@@ -90,6 +90,28 @@ ul {
   padding: 0;
   margin: 0; }
 
+.line-above-black:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40px);
+  background-color: black; }
+
+.line-above-white:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40px);
+  background-color: white; }
+
 .ba-header {
   position: absolute;
   top: 0;
@@ -156,7 +178,8 @@ ul {
   background-color: #4b4b4b;
   background-image: url(../images/background.jpg);
   background-size: cover;
-  padding-top: 23.125rem;
+  display: flex;
+  align-items: center;
   text-align: center; }
   .ba-hero__title {
     /* Style for "Simple & m" */
@@ -189,11 +212,13 @@ ul {
     line-height: 40px; }
 
 .ba-work {
+  position: relative;
   padding-top: 6.25rem;
   padding-bottom: 135px;
   color: #2c4058; }
   .ba-work__header {
     /* Style for "what we do" */
+    position: relative;
     font-family: 'Gotham-Medium';
     font-size: 2.75rem;
     font-weight: 600;
@@ -203,19 +228,28 @@ ul {
   .ba-work-list + .ba-work-list {
     margin-top: 205px; }
   .ba-work__img_background {
-    max-width: 585px;
-    max-height: 470px;
-    background-color: #55b7ff;
-    position: absolute; }
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 60%;
+    height: 470px;
+    background-color: #55b7ff; }
+    .ba-work__img_background-right {
+      position: absolute;
+      bottom: 13%;
+      left: 60%;
+      right: 0;
+      height: 470px;
+      background-color: #7e5aff; }
   .ba-work__img {
-    /* height: 100%;
-        max-width: 630px;
-        object-fit: cover; */
-    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: relative;
     z-index: 10; }
   .ba-work__item {
-    padding-left: 50px;
+    /* padding: {
+            left: 50px;
+        } */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -267,9 +301,16 @@ ul {
   padding-bottom: 209px;
   background-color: #ffffff;
   background-image: url(../images/Bg-News.jpg);
-  background-size: cover; }
+  background-size: cover;
+  /* &__item:nth-child(3n + 2) {
+        margin: {
+            left: 30px;
+            right: 30px;
+        }
+    } */ }
   .ba-news__title {
     /* Style for "latest new" */
+    position: relative;
     color: #ffffff;
     font-family: 'Gotham-Medium';
     font-size: 44px;
@@ -277,12 +318,11 @@ ul {
     margin-bottom: 100px;
     text-align: center; }
   .ba-news__picture {
-    height: 100%;
+    width: 100%;
     max-width: 370px;
     object-fit: cover; }
   .ba-news-list {
-    display: flex;
-    justify-content: space-around; }
+    justify-content: center; }
     .ba-news-list__title {
       /* Style for "See The Un" */
       padding-left: 20px;
@@ -311,9 +351,8 @@ ul {
     padding-bottom: 30px;
     margin-bottom: 30px;
     background-color: #ffffff; }
-  .ba-news__item:nth-child(3n + 2) {
-    margin-left: 30px;
-    margin-right: 30px; }
+  .ba-news__item + .ba-news__item {
+    margin-left: 30px; }
   .ba-news__img {
     margin-bottom: 30px; }
   .ba-news-person {
@@ -351,6 +390,7 @@ ul {
     align-items: center; }
   .ba-gallery__title {
     /* Style for "gallery" */
+    position: relative;
     color: #2c4058;
     font-family: 'Gotham-Medium';
     font-size: 44px;
@@ -415,6 +455,7 @@ ul {
 
 .ba-callback__title {
   /* Style for "get in tou" */
+  position: relative;
   text-align: center;
   font-family: 'Gotham-Medium';
   font-size: 44px;
@@ -459,22 +500,23 @@ input[type=email]:focus {
   opacity: 1.0;
   color: #000000; }
 
-.slick-dots li {
-  margin-left: 40px; }
-
-.slick-dots li button:before {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  border: 1px solid white;
-  opacity: 1;
-  color: transparent; }
-
-.slick-dots li.slick-active button:before {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  border: 1px solid white;
-  opacity: 1;
-  color: transparent;
-  background-color: white; }
+/* .slick-dots li {
+    margin-left: 40px;
+} */
+/* .slick-dots li button:before {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 1px solid white;
+    opacity: 1;
+    color: transparent;
+} */
+/* .slick-dots li.slick-active button:before {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 1px solid white;
+    opacity: 1;
+    color: transparent;
+    background-color: white;
+} */
