@@ -208,7 +208,7 @@
 /*====================  vertical dots ==================*/
 .vertical-dots
 {
-    right: 0;
+    right: -30px;
     list-style: none;
     display: block;
     position: absolute;

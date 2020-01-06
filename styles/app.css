@@ -212,34 +212,33 @@ ul {
     line-height: 40px; }
 
 .ba-work {
+  position: relative;
   padding-top: 6.25rem;
   padding-bottom: 135px;
   color: #2c4058; }
   .ba-work__header {
     /* Style for "what we do" */
-    position: relative;
     font-family: 'Gotham-Medium';
     font-size: 2.75rem;
     font-weight: 600;
     text-align: center; }
   .ba-work-list {
-    position: relative;
     margin-top: 160px; }
   .ba-work-list + .ba-work-list {
     margin-top: 205px; }
   .ba-work__img_background {
     position: absolute;
-    top: -4.375rem;
-    bottom: 4.375rem;
+    top: 15%;
     left: 0;
     right: 60%;
+    height: 470px;
     background-color: #55b7ff; }
     .ba-work__img_background-right {
       position: absolute;
-      top: -4.375rem;
-      bottom: 4.375rem;
+      bottom: 13%;
       left: 60%;
       right: 0;
+      height: 27%;
       background-color: #7e5aff; }
   .ba-work__img {
     display: block;
@@ -316,7 +315,7 @@ ul {
     position: relative;
     color: #ffffff;
     font-family: 'Gotham-Medium';
-    font-size: 44px;
+    font-size: 2.75rem;
     font-weight: 500;
     margin-bottom: 100px;
     text-align: center; }
@@ -335,7 +334,7 @@ ul {
       font-size: 1.375rem;
       font-weight: 700;
       line-height: 1.54;
-      margin-bottom: 1.25rem; }
+      margin-bottom: 20px; }
     .ba-news-list__text {
       /* Style for "Free direc" */
       padding-left: 20px;
@@ -364,13 +363,13 @@ ul {
     align-items: center; }
 
 .ba-person__info {
-  margin-left: 1.25rem; }
+  margin-left: 20px; }
 
 .ba-person__name {
   /* Style for "Isaac Dunn" */
   color: #2c4058;
   font-family: "Gotham - Book";
-  font-size: 1.125rem;
+  font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 5px; }
 
@@ -378,7 +377,7 @@ ul {
   /* Style for "09 Feb 201" */
   color: #55b7ff;
   font-family: "Gotham-Book";
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 400; }
 
 .ba-gallery {
