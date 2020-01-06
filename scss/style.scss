@@ -167,7 +167,6 @@ ul {
 }
 //======================  ba-what-we-do  =====================//
 .ba-work {
-    position: relative;
     padding: {
         top: 6.25rem;
         bottom: 135px;
@@ -182,6 +181,7 @@ ul {
         text-align: center;
     }
     &-list {
+        position: relative;
         margin-top: 160px;
     }
     &-list + &-list {
@@ -189,28 +189,27 @@ ul {
     }
     &__img_background {
         position: absolute;
-        top: 15%;
+        top: -4.375rem;
+        bottom: 4.375rem;
         left: 0;
         right: 60%;
-        //max-width: 585px;
-        height: 470px;
         background-color: #55b7ff;
 
         &-right {
             position: absolute;
-            bottom: 13%;
+            top: -4.375rem;
+            bottom: 4.375rem;
             left: 60%;
             right: 0;
-            //max-width: 585px;
-            height: 470px;
             background-color: #7e5aff;
         }
     }
     &__img {
+        display: block;
+        width: 100%;
         height: 100%;
-        //max-width: 630px;
         object-fit: cover;
-        //max-width: 100%;
+        object-position: center;
         position: relative;
         z-index: 10;
     }
@@ -311,10 +310,10 @@ ul {
             }
             color: #2c4058;
             font-family: 'Gotham-Medium';
-            font-size: 22px;
+            font-size: 1.375rem;
             font-weight: 700;
-            line-height: 34px;
-            margin-bottom: 20px;
+            line-height: 1.54;
+            margin-bottom: 1.25rem;
         }
         &__text {
             /* Style for "Free direc" */
@@ -365,13 +364,13 @@ ul {
 
 .ba-person {
     &__info {
-        margin-left: 20px;
+        margin-left: 1.25rem;
     }
     &__name {
         /* Style for "Isaac Dunn" */
         color: #2c4058;
         font-family: "Gotham - Book";
-        font-size: 18px;
+        font-size: 1.125rem;
         text-transform: uppercase;
         margin-bottom: 5px;
     }
@@ -379,7 +378,7 @@ ul {
         /* Style for "09 Feb 201" */
         color: #55b7ff;
         font-family: "Gotham-Book";
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 400;
     }
 }
@@ -411,6 +410,12 @@ ul {
         /* height: 100%;
         max-width: 445px;
         object-fit: cover; */
+
+        /* display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center; */
     }
     &__item {
         padding: {
