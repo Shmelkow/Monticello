@@ -24,24 +24,24 @@ ul {
 .line-above-black:before {
     content: "";
     display: block;
-    width: 100px;
+    width: 6.25rem;
     height: 1px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -40px);
+    transform: translate(-50%, -2.5rem);
     background-color: black;
 }
 
 .line-above-white:before {
     content: "";
     display: block;
-    width: 100px;
+    width: 6.25rem;
     height: 1px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -40px);
+    transform: translate(-50%, -2.5rem);
     background-color: white;
 }
 
@@ -51,7 +51,7 @@ ul {
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 3.125rem;
     color: white;
     &-wrapper {
         display: flex;
@@ -65,7 +65,7 @@ ul {
     align-items: center;
     list-style: none;
     &__item + &__item {
-        margin-left: 90px;
+        margin-left: 5.625rem;
     }
     &__link {
         font-family: 'Gotham-Book';
@@ -78,12 +78,12 @@ ul {
         content: '';
         display: inline-block;
         position: absolute;
-        width: 9px;
-        height: 9px;
+        width: 0.5625rem;
+        height: 0.5625rem;
         border-radius: 50%;
         border: 1px solid #ffffff;
         top: 0;
-        left: -20px;
+        left: -1.25rem;
     }
     &__link:active::before,
     &__link:hover::before {
@@ -103,13 +103,13 @@ ul {
         font-size: 1rem;
         text-align: center;
         display: block;
-        width: 40px;
-        height: 40px;
+        width: 2.5rem;
+        height: 2.5rem;
         border-radius: 50%;
         border: 1px solid rgba($color: #ffffff, $alpha: 0.4);
     }
     &__link > i {
-        line-height: 40px;
+        line-height: 2.5rem;
     }
     &__link:hover > i {
         color: #1b046e;
@@ -127,7 +127,6 @@ ul {
         image: url(../images/background.jpg);
         size: cover;
     }
-    //padding-top: 23.125rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -137,15 +136,15 @@ ul {
         font-size: 5rem;
         font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 4px;
-        margin-bottom: 32px;
+        letter-spacing: 0.25rem;
+        margin-bottom: 2rem;
     }
     &__story {
         /* Style for "We make th" */
         font-family: "Gotham-Book";
         font-size: 1.125rem;
         text-transform: uppercase;
-        letter-spacing: 5.4px;
+        letter-spacing: 0.3375rem;
     }
     &__link {
         position: absolute;
@@ -156,13 +155,13 @@ ul {
         font-size: 1rem;
         text-align: center;
         display: block;
-        width: 40px;
-        height: 40px;
+        width: 2.5rem;
+        height: 2.5rem;
         border-radius: 50%;
         border: 1px solid rgba($color: #ffffff, $alpha: 0.4);
     }
     &__link > i {
-        line-height: 40px;
+        line-height: 2.5rem;
     }
 }
 //======================  ba-what-we-do  =====================//
@@ -170,7 +169,7 @@ ul {
     position: relative;
     padding: {
         top: 6.25rem;
-        bottom: 135px;
+        bottom: 8.4375rem;
     }
     color: #2c4058;
     &__header {
@@ -181,10 +180,10 @@ ul {
         text-align: center;
     }
     &-list {
-        margin-top: 160px;
+        margin-top: 10rem;
     }
     &-list + &-list {
-        margin-top: 205px;
+        margin-top: 12.8125rem;
     }
     &__img_background {
         position: absolute;
@@ -192,7 +191,7 @@ ul {
         left: 0;
         right: 60%;
         //max-width: 585px;
-        height: 470px;
+        height: 32%;
         background-color: #55b7ff;
 
         &-right {
@@ -225,36 +224,36 @@ ul {
     }
     &__title {
         /* Style for "One World" */
-        font-size: 44px;
+        font-size: 2.75rem;
         font-family: "Gotham-Bold"; 
     }
     &__item > span {
         font-family: "Gotham-Book";
-        font-size: 22px;
+        font-size: 1.375rem;
         text-transform: uppercase;
     }
     &__text {
         margin: {
-            top: 11px;
-            bottom: 24px;
+            top: 0.6875rem;
+            bottom: 1.5rem;
         }
         color: #4b5562;
         font-family: 'Open Sans', sans-serif;
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 1.125rem;
+        line-height: 1.875rem;
     }
     &-button {
         /* Style for "more detai" */
-        width: 190px;
-        height: 50px;
+        width: 11.875rem;
+        height: 3.125rem;
         color: #2c4058;
         background-color: #ffffff;
         outline: none;
         border: 1px solid #2c4058;
         font-family: "Gotham-Book";
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 400;
-        line-height: 50px;
+        line-height: 3.125rem;
         text-transform: uppercase;
     }
     &-button:hover {
@@ -265,20 +264,20 @@ ul {
         /* Style for "  New Yor" */
         color: #2c4058;
         font-family: 'Open Sans', sans-serif;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-style: italic;
-        line-height: 30px;
-        margin-top: 55px;
+        line-height: 1.875rem;
+        margin-top: 3.4375rem;
     }
 
 }
 //======================  ba-news  ===========================//
 .ba-news {
     /* Style for "Bg" */
-    min-height: 1035px;
+    min-height: 102,1875rem;
     padding: {
-        top: 180px;
-        bottom: 209px;
+        top: 11.25rem;
+        bottom: 13.0625rem;
     }
     background-color: #ffffff;
     background: {
@@ -292,12 +291,12 @@ ul {
         font-family: 'Gotham-Medium';
         font-size: 2.75rem;
         font-weight: 500;
-        margin-bottom: 100px;
+        margin-bottom: 6.25rem;
         text-align: center;
     }
     &__picture {
         width: 100%;
-        max-width: 370px;
+        max-width: 23.125rem;
         object-fit: cover;
     }
     &-list {
@@ -306,27 +305,27 @@ ul {
         &__title {
             /* Style for "See The Un" */
             padding: {
-                left: 20px;
-                right: 30px;
+                left: 1.25rem;
+                right: 1.875rem;
             }
             color: #2c4058;
             font-family: 'Gotham-Medium';
             font-size: 1.375rem;
             font-weight: 700;
             line-height: 1.54;
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
         }
         &__text {
             /* Style for "Free direc" */
             padding: {
-                left: 20px;
-                right: 30px;
+                left: 1.25rem;
+                right: 1.875rem;
             }
             color: #4b5562;
             font-family: 'Open Sans', sans-serif;
-            font-size: 18px;
-            line-height: 30px;
-            margin-bottom: 35px;
+            font-size: 1.125rem;
+            line-height: 1.875rem;
+            margin-bottom: 2.1875rem;
         }
         &__text_wide {
             padding-right: 0;
@@ -335,29 +334,28 @@ ul {
     }
     &__item {
         /* Style for "Frame" */
-        max-width: 370px;
-        min-height: 514px;
-        padding-bottom: 30px;
-        margin-bottom: 30px;
+        max-width: 23.125rem;
+        min-height: 32.125rem;
+        padding-bottom: 1.875rem;
+        margin-bottom: 1.875rem;
         background-color: #ffffff;
     }
     &__item + &__item {
         margin: {
-            left: 30px;
-            //right: 30px;
+            left: 1.875rem;
         }
     }
     /* &__item:nth-child(3n + 2) {
         margin: {
-            left: 30px;
-            right: 30px;
+            left: 1.875rem;
+            right: 1.875rem;
         }
     } */
     &__img {
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
     }
     &-person {
-        padding-left: 20px;
+        padding-left: 1.25rem;
         display: flex;
         align-items: center;
     }
@@ -365,21 +363,21 @@ ul {
 
 .ba-person {
     &__info {
-        margin-left: 20px;
+        margin-left: 1.25rem;
     }
     &__name {
         /* Style for "Isaac Dunn" */
         color: #2c4058;
         font-family: "Gotham - Book";
-        font-size: 18px;
+        font-size: 1.125rem;
         text-transform: uppercase;
-        margin-bottom: 5px;
+        margin-bottom: 0.3125rem;
     }
     &__date {
         /* Style for "09 Feb 201" */
         color: #55b7ff;
         font-family: "Gotham-Book";
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 400;
     }
 }
@@ -389,8 +387,8 @@ ul {
     &-wrapper {
         min-height: 1000px;
         padding: {
-            top: 180px;
-            bottom: 140px;
+            top: 11.25rem;
+            bottom: 8.75rem;
         }
         display: flex;
         flex-direction: column;
@@ -402,7 +400,7 @@ ul {
         position: relative;
         color: #2c4058;
         font-family: 'Gotham-Medium';
-        font-size: 44px;
+        font-size: 2.75rem;
         font-weight: 500;
     }
     &__img {
@@ -420,12 +418,12 @@ ul {
     }
     &__item {
         padding: {
-            left: 5px;
-            right: 5px;
+            left: 0.3125rem;
+            right: 0.3125rem;
         }
     }
     &__picture + &__picture {
-        margin-top: 7px;
+        margin-top: 0.4375rem;
     }
 }
 //======================  ba-map  =========================//
@@ -446,25 +444,25 @@ ul {
     }
     &-list {
         padding: {
-            top: 204px;
-            bottom: 211px;
+            top: 12.75rem;
+            bottom: 13.1875rem;
         }
     }
     &-container {
-        max-width: 770px;
+        max-width: 48.125rem;
         width: 100%;
         margin: 0 auto;
     }
     &__info {
-        margin-top: 42px;
+        margin-top: 2.625rem;
         display: flex;
     }
     &__copyright,
     &__prop {
         /* Style for "Copyrights" */
         font-family: "Gotham-Book";
-        font-size: 14px;
-        margin-right: 41px;
+        font-size: 0.875rem;
+        margin-right: 2.5625rem;
     }
 }
 
@@ -473,11 +471,11 @@ ul {
     &-window {
         position: absolute;
         left: 50%;
-        top: 150px;
+        top: 9.375rem;
         transform: translate(-50%, -100%);
-        width: 770px;
+        width: 48.125rem;
         color: #2c4058;
-        box-shadow: 0 -4px 30px rgba(133, 133, 133, 0.2);
+        box-shadow: 0 -4px 1.875rem rgba(133, 133, 133, 0.2);
         background-color: #ffffff;
         /* background: {
             image: url(../images/Bg-contacts.jpg);
@@ -485,10 +483,10 @@ ul {
         } */
         margin: 0 auto;
         padding: {
-            top: 91px;
-            bottom: 79px;
-            right: 60px;
-            left: 60px;
+            top: 5.6875rem;
+            bottom: 4.9375rem;
+            right: 3.75rem;
+            left: 3.75rem;
         }
     }
     &__title {
@@ -496,10 +494,10 @@ ul {
         position: relative;
         text-align: center;
         font-family: 'Gotham-Medium';
-        font-size: 44px;
+        font-size: 2.75rem;
         font-weight: 500;
         margin: {
-            bottom: 59px;
+            bottom: 3.6875rem;
         }
     }
     &-list {
@@ -508,24 +506,24 @@ ul {
     &__item {
         /* Style for "91 Nola" */
         font-family: "Gotham-Book";
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 300;
     }
     &__item > i {
         color: #7e5aff;
     }
     &__item + &__item {
-        margin-top: 32px;
+        margin-top: 2rem;
     }
     &-form {
-        height: 190px;
+        height: 11.875rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 }
 .ba-submit-btn {
-    width: 140px;
+    width: 8.75rem;
     align-self: flex-end;
 }
 input[type=text],
@@ -533,8 +531,8 @@ input[type=email] {
     opacity: 0.5;
     color: #4b5562;
     font-family: "Gotham-Book";
-    font-size: 18px;
-    line-height: 40px;
+    font-size: 1.125rem;
+    line-height: 2,22;
     outline: none;
     border: none;
     border-bottom: 1px solid #2c4058;
@@ -546,19 +544,19 @@ input[type=email]:focus {
 }
 //======================  slider  ========================//
 /* .slick-dots li {
-    margin-left: 40px;
+    margin-left: 2.5rem;
 } */
 /* .slick-dots li button:before {
-    width: 9px;
-    height: 9px;
+    width: 0.5625rem;
+    height: 0.5625rem;
     border-radius: 50%;
     border: 1px solid white;
     opacity: 1;
     color: transparent;
 } */
 /* .slick-dots li.slick-active button:before {
-    width: 9px;
-    height: 9px;
+    width: 0.5625rem;
+    height: 0.5625rem;
     border-radius: 50%;
     border: 1px solid white;
     opacity: 1;
